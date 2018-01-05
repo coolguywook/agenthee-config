@@ -20,15 +20,19 @@ logging:
 spring:
   profiles: dev
 
+greeting: "Hello DEV"
 ---    
 spring:
   profiles: ist
-  
+
+greeting: "Hello IST"
 ---    
 spring:
   profiles: uat
-  
+
+greeting: "Hello UAT"
 ---    
 spring:
-  profiles: production  
+  profiles: prod
 
+greeting: "Hello PRODUCTION"
