@@ -2,13 +2,15 @@ spring:
   application:
     name: account-service
 
-greeting: "Hello"
+agenthee:
+  greeting: "Hello"
 
 ---
 spring:
   profiles: local
-
-greeting: "Hello LOCAL"
+  
+agenthee:
+  greeting: "Hello LOCAL"
 
 logging:
   pattern:
@@ -22,19 +24,23 @@ logging:
 spring:
   profiles: dev
 
-greeting: "Hello DEV"
+agenthee:
+  greeting: "Hello DEV"
 ---    
 spring:
   profiles: ist
 
-greeting: "Hello IST"
+agenthee:
+  greeting: "Hello IST"
 ---    
 spring:
   profiles: uat
 
-greeting: "Hello UAT"
+agenthee:
+  greeting: "Hello UAT"
 ---    
 spring:
   profiles: prod
 
-greeting: "Hello PRODUCTION"
+agenthee:
+  greeting: "Hello PRODUCTION"
