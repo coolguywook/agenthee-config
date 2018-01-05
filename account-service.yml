@@ -8,6 +8,8 @@ greeting: "Hello"
 spring:
   profiles: local
 
+greeting: "Hello LOCAL"
+
 logging:
   pattern:
     console: "APP %d{yyyy-MM-dd'T'HH:mm:ss} %clr(${LOG_LEVEL_PATTERN:-%5p}) hostname='${hostName}' %m%n"
