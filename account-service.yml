@@ -10,7 +10,7 @@ spring:
   profiles: local
   
 agenthee:
-  greeting: "Hello LOCAL"
+  greeting: "Hello LOCAL AGENT"
 
 logging:
   pattern:
