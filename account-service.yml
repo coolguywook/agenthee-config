@@ -1,1 +1,36 @@
+spring:
+  application:
+    name: account-service
+  profiles:
+    active: local
+
 greeting: "Hello"
+
+---
+spring:
+  profiles: local
+
+logging:
+  pattern:
+    console: "APP %d{yyyy-MM-dd'T'HH:mm:ss} %clr(${LOG_LEVEL_PATTERN:-%5p}) hostname='${hostName}' %m%n"
+  level:
+    org.springframework.web: INFO
+    org.springframework.jdbc.core: TRACE
+    org.springframework.jdbc.core.StatementCreatorUtils: TRACE
+
+---
+spring:
+  profiles: dev
+
+---    
+spring:
+  profiles: ist
+  
+---    
+spring:
+  profiles: uat
+  
+---    
+spring:
+  profiles: production  
+
