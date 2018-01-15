@@ -1,1 +1,3 @@
+server.port=${PORT:8800}
+
 message : "Hello reservation service update!!!"
